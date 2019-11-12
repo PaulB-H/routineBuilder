@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="headerContainer">
+
+        <div class="testHeadFlex">
+
+            <h1>This is a static header</h1>
+            <br>
+            <!-- <h1>Front Muscles</h1> -->
+            <div class="dropdown show">
+                <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="frontDropdown"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Front Muscles
+                </a>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <a class="dropdown-item frontItem" href="#">Shoulders</a>
+                    <a class="dropdown-item frontItem" href="#">Biceps</a>
+                    <a class="dropdown-item frontItem" href="#">Obliques</a>
+                    <a class="dropdown-item frontItem" href="#">Chest</a>
+                    <a class="dropdown-item frontItem" href="#">Quads</a>
+                    <a class="dropdown-item frontItem" href="#">Abs</a>
+                </div>
+            </div>
+            <input class="form-control selectedMuscle" type="text" placeholder="Selected Muscle Group…" readonly>
+            <!-- <h1>Rear Muscles</h1> -->
+            <div class="dropdown show">
+                <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Rear Muscles
+                </a>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <a class="dropdown-item" href="#">Neck / Upper Back</a>
+                    <a class="dropdown-item" href="#">Triceps</a>
+                    <a class="dropdown-item" href="#">Outer-Back</a>
+                    <a class="dropdown-item" href="#">Butt</a>
+                    <a class="dropdown-item" href="#">Hamstring</a>
+                    <a class="dropdown-item" href="#">Calves</a>
+                </div>
+                <br><br>
+                <h1>Equipment Required</h1>
+                <div class="dropdown show">
+                    <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Equipment Required
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="content">
+
+        <div class="workoutList">
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
