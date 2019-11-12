@@ -18,13 +18,28 @@ $(document).ready(function () {
             console.log(response.results[0].category);
 
             for (var i = 0; i < 5; i++) {
-                    $(".workoutList").append(`
+
+                $(".workoutList").append(`
                     <div class="workoutBlock">
                         <h1>${response.results[i].name}</h1>
                         <p>${response.results[i].description}</p>
                         <button>Add to routine</button>
                     </div>
-                    `);
+                `);
+
+                let queryURL = `https://wger.de/api/v2/exerciseimage/?exercise=${response.results[i].id}`
+
+                $.get(`${queryURL}`, function (response) {
+
+                    if (response.count == 0){
+                        console.log("No image here");
+                    }
+
+                    else {
+                        console.log(response);
+                    }
+
+                });
             }
         })
     };
