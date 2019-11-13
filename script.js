@@ -2,18 +2,22 @@ $(document).ready(function () {
 
     var iterator;
 
+    var userMuscle;
+
     $(".frontItem").click(function () {
         console.log(`${this.text} clicked!`);
         console.log(`The muscleID is: ${this.id}`);
         $(".selectedMuscle").val(`${this.text}`);
-        $(".selectedMuscle").attr('id', `${this.id}`);
+        userMuscle = `${this.id}`;
+        console.log(userMuscle);
     });
 
     $(".rearItem").click(function () {
         console.log(`${this.text} clicked!`);
         console.log(`The muscleID is:${this.id}`);
         $(".selectedMuscle").val(`${this.text}`);
-        $(".selectedMuscle").attr('id', `${this.id}`);
+        userMuscle = `${this.id}`;
+        console.log(userMuscle);
     });
 
     function getExercises() {
@@ -62,14 +66,12 @@ $(document).ready(function () {
     };
 
 
-    
+    // https://wger.de/api/v2/exercise/?language=2&muscles=1&status=2
+
     $("#searchButton").click(function () {
         $(".workoutList").empty();
-        console.log("Clicked!")
+        console.log(userMuscle);
     });
-
-
-
 
 
     getExercises();

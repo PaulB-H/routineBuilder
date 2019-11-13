@@ -90,7 +90,7 @@ img {
 
 /*
 
-"Added function for searchButton to clear exerciseList onclick with jQuery .empty()"
+"Created global variable that is set to the ID value of the corresponding clicked muscle, so it can be passed as a parameter into queryURL"
 
 
 */
