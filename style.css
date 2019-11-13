@@ -95,10 +95,11 @@ img {
     background-color: rgb(236, 236, 236);
     color: darkgray;
     text-align: center;
+    margin-top: 5px;
 }
 
 /*
 
-"Connected search button to getExercises function with the passed-in userMuscle param for  queryURL"
+"Created an object to store exercise details, and append each object into an array we will take objects from later to construct a routine"
 
 */
