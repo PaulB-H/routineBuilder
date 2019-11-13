@@ -12,62 +12,65 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
-    <title>Document</title>
+    <title>Workout Routine Creator</title>
 </head>
 
 <body>
 
     <div class="headerContainer">
 
-        <div class="testHeadFlex">
-
-            <h1>This is a static header</h1>
-            <br>
-            <!-- <h1>Front Muscles</h1> -->
+        <h3>Workout Routine Creator</h3>
+        <!-- <h1>Front Muscles</h1> -->
+        <div class="btn-group" role="group" aria-label="Basic example">
             <div class="dropdown show">
                 <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="frontDropdown"
                     data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Front Muscles
                 </a>
                 <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                    <a class="dropdown-item frontItem" href="#">Shoulders</a>
-                    <a class="dropdown-item frontItem" href="#">Biceps</a>
-                    <a class="dropdown-item frontItem" href="#">Obliques</a>
-                    <a class="dropdown-item frontItem" href="#">Chest</a>
-                    <a class="dropdown-item frontItem" href="#">Quads</a>
-                    <a class="dropdown-item frontItem" href="#">Abs</a>
+                    <a class="dropdown-item frontItem" href="#" id="2">Shoulders</a>
+                    <a class="dropdown-item frontItem" href="#" id="1">Biceps</a>
+                    <a class="dropdown-item frontItem" href="#" id="14">Obliques</a>
+                    <a class="dropdown-item frontItem" href="#" id="4">Chest</a>
+                    <a class="dropdown-item frontItem" href="#" id="10">Quads</a>
+                    <a class="dropdown-item frontItem" href="#" id="6">Abs</a>
                 </div>
             </div>
-            <input class="form-control selectedMuscle" type="text" placeholder="Selected Muscle Group…" readonly>
-            <!-- <h1>Rear Muscles</h1> -->
+            <h4>&#183;OR&#183;</h4>
             <div class="dropdown show">
-                <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="rearDropdown"
                     data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Rear Muscles
                 </a>
                 <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                    <a class="dropdown-item" href="#">Neck / Upper Back</a>
-                    <a class="dropdown-item" href="#">Triceps</a>
-                    <a class="dropdown-item" href="#">Outer-Back</a>
-                    <a class="dropdown-item" href="#">Butt</a>
-                    <a class="dropdown-item" href="#">Hamstring</a>
-                    <a class="dropdown-item" href="#">Calves</a>
-                </div>
-                <br><br>
-                <h1>Equipment Required</h1>
-                <div class="dropdown show">
-                    <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Equipment Required
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <a class="dropdown-item" href="#">Something else here</a>
-                    </div>
+                    <a class="dropdown-item rearItem" href="#" id="9">Lower Neck</a>
+                    <a class="dropdown-item rearItem" href="#" id="5">Triceps</a>
+                    <a class="dropdown-item rearItem" href="#" id="12">Outer-Back</a>
+                    <a class="dropdown-item rearItem" href="#" id="8">Butt</a>
+                    <a class="dropdown-item rearItem" href="#" id="11">Hamstring</a>
+                    <a class="dropdown-item rearItem" href="#" id="7">Calves</a>
                 </div>
             </div>
         </div>
+
+            <p style="margin: auto;">↓ Selected ↓</p>
+            <input class="form-control selectedMuscle" style="max-width: 200px;" type="text"placeholder="Selected Muscle…" readonly>
+
+            <!-- <p style="margin: auto;">↓ Optional Filter... ↓</p>
+            <div class="dropdown show">
+                <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Equipment
+                </a>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <a class="dropdown-item" href="#" id="1">Barbell</a>
+                    <a class="dropdown-item" href="#" id="3">Dumbbell</a>
+                    <a class="dropdown-item" href="#" id="6">Pull-up Bar</a>
+                    <a class="dropdown-item" href="#" id="7">None / Bodyweight</a>
+                </div>
+            </div> -->
+
+    </div>
+    </div>
     </div>
 
     <div class="content">
@@ -76,6 +79,15 @@
 
         </div>
 
+    </div>
+
+    <div class="d-none">
+        <p>Test div for future use</p>
+    </div>
+
+
+    <div class="footer">
+            <p style="margin: auto;">Paul Bernard-Hall</p>
     </div>
 
 </body>
