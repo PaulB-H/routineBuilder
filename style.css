@@ -15,11 +15,20 @@
     padding-bottom: 5px;
 }
 
-.selectedMuscle {
+#frontDropdown, #rearDropdown {
+    max-height: 30px;
+    text-align: center;
+    padding: 5px;
+}
+
+#selectedMuscle {
     margin: auto;
     user-select: none;
     text-align: center;
     margin-bottom: 5px;
+    max-height: 30px;
+    max-width: 165px;
+    font-weight: bold;
 }
 
 /* Container for everything on page */
@@ -90,7 +99,6 @@ img {
 
 /*
 
-"Created global variable that is set to the ID value of the corresponding clicked muscle, so it can be passed as a parameter into queryURL"
-
+"Connected search button to getExercises function with the passed-in userMuscle param for  queryURL"
 
 */
