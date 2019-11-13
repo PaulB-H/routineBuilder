@@ -61,5 +61,16 @@ $(document).ready(function () {
         })
     };
 
+
+    
+    $("#searchButton").click(function () {
+        $(".workoutList").empty();
+        console.log("Clicked!")
+    });
+
+
+
+
+
     getExercises();
 });
