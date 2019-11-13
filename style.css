@@ -19,6 +19,7 @@
     margin: auto;
     user-select: none;
     text-align: center;
+    margin-bottom: 5px;
 }
 
 /* Container for everything on page */
@@ -86,3 +87,10 @@ img {
     color: darkgray;
     text-align: center;
 }
+
+/*
+
+"Added search button (Found html code for search icon too!)"
+
+
+*/
